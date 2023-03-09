@@ -1,0 +1,225 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+
+}
+h1 a{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+    color: rgba(253, 92, 92, 1);
+    letter-spacing: 0.1em;
+}
+.cart{
+    position: absolute;
+    top: -0.5%;
+    right: 0%;
+    transform: scale(0.6);
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+.cont{
+    display: none;
+    width: 1em;
+    padding: 0.1em;
+    font-family:  Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    background-color: black;
+    border-radius: 5rem;
+}
+a{
+    color: black;   
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.element{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vw;
+    width: 10vw;
+    background-color:rgb(92, 253, 140);
+    opacity: 0.7;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5rem;
+    transition: 1s all;
+}
+.element:hover{
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3), -3px -3px 20px rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+}
+
+.noc{
+    border: none;
+    position: absolute;
+    bottom: 5%;
+    z-index: -1;
+}
+.noc:focus{
+    border: none;
+}
+.main{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100vw;
+
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    border: 3px dotted lightgrey;
+    padding: 1em;
+    min-width: fit-content;
+    width: 25vw;
+    margin-left: 1%;
+    max-width: 35vw;
+}
+.txt{
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    padding: 1em;
+}
+.desc{
+    margin-top: 1em;
+}
+.add{
+    font-family: 'Orbitron', sans-serif;
+    position:relative;
+    letter-spacing: 0.1em;
+    top: 20%;
+    left: 25%;
+    border-radius: 1em;
+    padding: 10%;
+    max-height: 5vh;
+    background-color:rgba(92, 253, 140, 0.7);
+    border: none;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 1s;
+}
+.add:hover{
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3), -3px -3px 20px rgba(0, 0, 0, 0.3);
+}
+.remove{
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translateX(-30%);
+    letter-spacing: 0.1em;
+    border-radius: 1em;
+    padding: 1%;
+    max-height: 5vh;
+    background-color:rgba(92, 253, 140, 0.7);
+    border: none;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 1s; 
+}
+.remove:hover{
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3), -3px -3px 20px rgba(0, 0, 0, 0.3);
+}
+.buy{
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    transform: translateX(-70%);
+    letter-spacing: 0.1em;
+    border-radius: 1em;
+    padding: 1%;
+    max-height: 5vh;
+    background-color:rgba(92, 253, 140, 0.7);
+    border: none;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 1s; 
+}
+.black{
+    background-color: black;
+    width: 100vw;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    position: absolute;
+    bottom: 0%;
+}
+.cartt .main{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+}
+.p1{
+    display: none;
+}
+.p2{
+    display: none;
+}
+.p3{
+    display: none;
+}
+@media (max-width: 1000px){
+    .noc{
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .element{
+        padding: 1.5vw;
+        padding-top: 3vw;
+        min-width: 30vw;
+        width: 40vw;
+        max-width: 50vw;
+        min-height: 3vh;
+    }
+    .main{
+        top: 50%;
+    }
+    .product{
+        border: none;
+    }
+    img{
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    }
+    .remove{
+        padding: 1.5%;
+        padding-bottom: 3%;
+        transform: translateX(-60%);
+    }
+    .buy{
+        padding: 1.5%;
+        padding-bottom: 3%;
+    }
+
+}

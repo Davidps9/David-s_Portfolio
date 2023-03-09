@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/processing.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>FIGHT</title>
+</head>
+<body onload="giveItem()">
+    <div class="header">
+        <a href="../productos/cart.html">
+            <img class="cart"src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-solid-kiranshastry-1.png" />
+            <span class="cont"></span>
+        </a>
+        <h1>
+            <a href="../index.html" onclick="giveItem()">FIGHT</a>
+        </h1>
+    </div>
+    <div class="menu" style="top: 10%;">
+        <div class="element" onclick="giveItem()" ><a href="../productos/first.html">LOREM</a></div>
+        <div class="element" onclick="giveItem()" ><a href="../productos/second.html">IPSUM</a></div>
+        <div class="element" onclick="giveItem()" ><a href="../productos/third.html">MORET</a></div>
+    </div>
+    <div class="main">
+        <div class="product">
+            <img src="../img/fight_bolsa.png" alt="bag" width="204" height="293">
+            <div class="txt">
+            <p><strong>Tote Bag</strong></p>
+            <p class="desc">Eco friendly tote bag</p>
+            <button class="add" onclick="addtocart(1)">Add to cart</button>
+            </div>
+
+        </div>
+    </div>
+        <script src="../js/main.js"></script>
+</body>
+</html>

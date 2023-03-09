@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>FIGHT</title>
+</head>
+<body onload="giveItem()">
+    <div class="header">
+        <a href="../productos/cart.html">
+            <img class="cart"src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-solid-kiranshastry-1.png" />
+            <span class="cont"></span>
+        </a>
+        <h1>
+            <a href="../index.html" onclick="giveItem()">FIGHT</a>
+        </h1>
+    </div>
+    <div class="menu" style="top: 10%;">
+        <div class="element" onclick="giveItem()" ><a href="../productos/first.html">LOREM</a></div>
+        <div class="element" onclick="giveItem()" ><a href="../productos/second.html">IPSUM</a></div>
+        <div class="element" onclick="giveItem()" ><a href="../productos/third.html">MORET</a></div>
+    </div>
+    <div class="main">
+        <div class="product">
+            <img src="../img/Interrogante-negro.png" alt="bag" width="256" height="256">
+            <div class="txt">
+                <p><strong>Coming Soon</strong></p>
+                <p class="desc">You can add it to your cart, but you won't now what is untill you receive it.</p>
+                <button class="add" style="padding: 4%;" onclick="addtocart(3)">Add to cart</button>
+            </div>
+           
+        </div>
+    </div>
+        <script src="../js/main.js"></script>
+</body>
+</html>
