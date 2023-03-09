@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --hue: hsl(17, 50%, 75%);
+}
+body{
+ 
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    border-radius: 5px;
+    color: wheat;
+}
+h2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    border-radius: 5px;
+    color: wheat;
+}
+.uwu{
+    position: absolute;
+    top: 00%;
+    z-index: -1;
+    width: 100vw;
+    height: 30vw;
+    border: none;
+    margin-bottom: 1%;
+    
+}
+.a{
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    border: none;
+   
+}
+#b{
+    position: absolute;
+    top: 170%;
+    border: none;
+
+}
+.card_container{
+   width: 90vw;
+   height: 100vh;
+   margin:5vw ;
+   gap: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 70%;
+
+}
+.card{
+    text-align: center;
+    vertical-align: middle;
+   background-color:  var(--hue) ;
+   width: 15vw;
+   font-size: large;
+   transform: translateX(100px);
+   border-radius: .25rem;
+   opacity: 0;
+   transition: all 1s;
+   padding: 2%;
+   margin: 1%;
+   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+.shown{
+   transform: translateX(0px);
+   opacity: 1;
+}
+a{
+    color: black;
+}
+@media (max-width: 1200px){
+    .uwu{
+        height: 30vw;
+    }
+    .card_container{
+        top: 50%;
+    }
+    h2{
+        position: absolute;
+        top: 25%;
+    }
+    .a{
+        top: 50%;
+    }
+
+  
+}
+@media (max-width: 800px){
+
+    .card_container{
+        top: 35%;
+    }
+    .card{
+        width: 30vh;
+        height: 13vh;
+    }
+    .uwu{
+        display: none;
+    }
+    .a{
+        display: none;
+    }
+    #b{
+        display: none;
+    }
+    h2{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    h1{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+@media (max-width: 600px){
+    h2{
+        top: 35%;
+    }
+    .card_container{
+        top: 50%;
+    }
+}
