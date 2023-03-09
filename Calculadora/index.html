@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Buscate un tutorial perra-->
+    <div class="container">
+        <div id="screen"></div>
+        <div class="button_zone">
+            <div class="button 1" onclick="setNum(1)">1</div>
+            <div class="button 2" onclick="setNum(2)">2</div>
+            <div class="button 3" onclick="setNum(3)">3</div>
+            <div class="button +" onclick="Operator('+')">+</div>
+            <div class="button 4" onclick="setNum(4)">4</div>
+            <div class="button 5" onclick="setNum(5)">5</div>
+            <div class="button 6" onclick="setNum(6)">6</div>
+            <div class="button -" onclick="Operator('-')">-</div>
+            <div class="button 7" onclick="setNum(7)">7</div>
+            <div class="button 8" onclick="setNum(8)">8</div>
+            <div class="button 9" onclick="setNum(9)">9</div>
+            <div class="button a" onclick="Operator('*')">*</div>
+            <div class="button b" onclick="setNum(0)">0</div>
+            <div class="button punto" onclick="setNum('.')">.</div>
+            <div class="button C" onclick="erease()">C</div>
+            <div class="button /" onclick="Operator('/')">/</div> 
+            <div class="button igual" onclick="equals()"  >=</div>
+           
+            
+                       
+        </div>
+    </div>
+</body>
+</html>

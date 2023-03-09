@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+h1{
+  color:crimson;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 300%;
+  position: absolute;
+  top:1%;
+  left: 50%;
+  transform: translate(-50%);
+}
+h2{
+  color:white;
+  text-align: left;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 300%;
+  position: absolute;
+  top:100%;
+  left: 50%;
+  transform: translate(-50%);
+  text-decoration: underline;
+}
+h3{
+  color:white;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 300%;
+  position: absolute;
+  top:120%;
+  left: 30%;
+  transform: translate(-50%);
+  
+}
+.h3{
+  position: absolute;
+  top:155%;
+  left: 36.5%;
+  transform: translate(-50%);
+}
+p{
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+.p1{
+  position: absolute;
+  top:130%;
+  left: 26%;
+  font-size: 150%;
+  padding-bottom: 3%;
+}
+.p2{
+  position: absolute;
+  top:165%;
+  left: 26%;
+  font-size: 150%;
+  padding-bottom: 3%;
+}
+
+canvas {
+  border-radius:50px ;
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow:beige 2px 2px 10px, beige  -2px -2px 10px;
+}
+.btn2{
+
+  position: absolute;
+  top: 80%;
+  left: 37.5%;
+  transform: scale(1.5), translate(-50%);
+}
+button{
+  text-align: center;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 90%;
+  padding: 0.7vh ;
+  color:whitesmoke;
+  position: absolute;
+  top: 70%;
+  left: 63%;
+  background-color: rgb(26, 26, 26);
+  box-shadow:beige 1px 1px 5px, -1px -1px 5px;
+  border-radius: 10px;
+  transform: scale(1.5);
+  border: none;
+  width: 5vw;
+}
+input{
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 90%;
+  padding: 0.7vh   2vh ;
+  color:whitesmoke;
+  position: absolute;
+  top: 70%;
+  left: 36%;
+  background-color: rgb(26, 26, 26);
+  box-shadow:beige 1px 1px 5px, -1px -1px 5px;
+  border-radius: 10px;
+  transform: scale(1.5);
+  border: none;
+  width: 15vw;
+}

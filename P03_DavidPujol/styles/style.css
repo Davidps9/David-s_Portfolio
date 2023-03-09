@@ -1,0 +1,203 @@
+
+body{
+    display: flex;
+    flex-wrap:wrap ;
+  flex-direction:row ;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /*le decimos que ocupe el 100% de la pantalla sin forzar el scroll*/
+  margin:0;
+  padding:0;
+  box-sizing: border-box; /* hara que no se genere scroll*/
+}
+#bg{
+    transition: background-color 0.5s ;
+}
+.texto{
+    
+    position: absolute;
+    top :30%;
+    left: 40%;
+    width: 60%;
+
+}
+main{
+    
+    height: 100%; /*se pone para que coja el 100% de toda la altura establcia anteriormente en el body*/
+    
+}
+.titulo1{
+    font-family: 'Playfair Display', serif;
+    margin:0;
+    font-size: medium;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size:60px;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form{
+    width: 100%;
+}
+#Buttonn{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ef4dc5;
+    border: none;
+    padding-right: 16px ;
+    padding-left: 16px ;
+    padding-top: 11px ;
+    padding-bottom: 11px ;
+    color: white;
+    width: 20%;
+    transition: all 0.5s;
+}
+#Buttonn:hover{
+    background-color: #ac388d;
+}
+#Buttonn:active{
+    box-shadow: inset 3px 3px 15px rgba(0, 0, 0, 0.5), inset -3px -3px 15px rgba(0, 0, 0, 0.5) ;
+}
+
+.write{
+    width: 60%;
+    border: solid 1px gray;
+    font-family: 'Roboto', sans-serif;
+    
+    padding-left: 16px ;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    
+}
+
+.img{
+    position: absolute ;
+    top: 1%;
+    right: 1%;
+}
+
+.foto{
+        background-image: url("../img/foto.jpg");
+        background-position: center;
+        background-repeat:no-repeat ;
+        background-size: cover;
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        height: 100%;
+        width: 35%;
+}
+.bloque-rosa{
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 90%;
+            background-color: #ef4dc5;
+            color: white;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            
+            width: 18%;
+            padding: 2%;
+            line-height:250%;
+
+        }
+
+
+    .exito{
+        opacity: 0;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .animated{
+        
+        animation: fade 7s;
+    }
+    @keyframes fade{
+        0%{ opacity: 1;}
+        100%{opacity: 0;}
+    }
+
+@media(max-width: 800px){
+        body{
+            display:block;
+        }
+        main{
+            margin: 0;
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            height: 30%;
+            background-color: inherit;
+           
+        }
+        .foto{
+            
+            
+            position: absolute;
+            top: 0%;
+            z-index: 0;
+            width: 100%;
+            height: 60%;
+            
+        }
+        .texto{
+            left: 10%;
+            width: 80%;
+        }
+        
+        h1{
+            font-size: 40px;
+            
+        }
+        .img{
+            
+            top: 5%;
+        }
+
+
+        .bloque-rosa{
+           position: absolute;
+           bottom: 100%;
+           height: 40%;
+           width: 40%;
+           line-height:15px;
+           padding: 5%;
+           font-size: 95%;
+           margin: 0;
+           
+        }
+        .form{
+            width: 100%;
+        }
+        .write{
+            width: 90%;
+            padding:3% ;
+            outline: 1px solid grey;
+            margin-bottom: 1% ;
+        }
+        #Buttonn{
+            width: 96.5%;
+            padding: 3%;
+        }
+        .exito{
+            position: absolute;
+            display: block;
+            margin-top: 2%;
+            left: 5;
+            font-size: 18px;
+        }
+    }

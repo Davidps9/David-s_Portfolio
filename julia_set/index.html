@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <h1> Julia Set Fractal</h1>
+    <script src="sketch.js"></script>
+    <h2>Maths behind the scenes</h2>
+    <h3>Formulas</h3>
+    <p class="p1">
+        <br>The main function used for this fractal is: f(z)=(z^2)+c, which we can see is an iterative one.<br><br>
+        Where c is a constant complex number (a+b*i), and z(n+1) es equal to (z(n)^2)+c, and z(0)= z.<br><br>
+        If we develop this last formula, we can see that (a+b*i)*(a+b*i) = (a^2 - b^2) + 2*(a*b*i).<br><br>
+        Where we are going to end with z(n+1) = (a^2 - b^2) + 2*(a*b*i) + a + (b*i).<br>
+    </p>
+    <h3 class="h3">Interesting angles to try:</h3>
+    <p class="p2">
+      <br>This are the most shocking angles to play with: 67, 36, 270, 300, 350, 315, 60 & 63º<br><br>
+      And also, something important to mention, is that if u introduce a negative angle,<br> you will get the mirrored version of his positive version.
+  </p>
+  </body>
+</html>

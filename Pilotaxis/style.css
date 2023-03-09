@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+h1{
+  font-family: 'Helvetica Neue', sans-serif;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+}
+p{
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 1%;
+}
+input{
+  border-radius:5px ;
+  border: none;
+}
+button{
+  font-family: Helvetica, sans-serif;
+  border: none;
+  border-radius:2px ;
+}

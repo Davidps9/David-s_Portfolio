@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drag</title>
+</head>
+<body onload="randomid()">
+<div class="game">
+<div class="dropable">
+    <div id="d0" class="dropeable" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" ondrop="dropasion(event)" ondragover="dragoverasion(event)"></div>
+    <div id="d1" class="dropeable" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" ondrop="dropasion(event)" ondragover="dragoverasion(event)"></div>
+    <div id="d2" class="dropeable" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" ondrop="dropasion(event)" ondragover="dragoverasion(event)"></div>
+    <div id="d3" class="dropeable" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" ondrop="dropasion(event)" ondragover="dragoverasion(event)"></div>
+</div>
+    
+    <div class="cardcontainer">
+        <div class="drag wuw" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" class="piece"></div>
+        <div class="drag wuw" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" class="piece"></div>
+        <div class="drag wuw" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" class="piece"></div>
+        <div class="drag wuw" draggable="true" ondragstart="dragasion(event)" ondrag="visibilidad(event)" ondragend="visibilidad2(event)" class="piece"></div>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

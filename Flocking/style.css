@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h2{
+  opacity: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 90%;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  color:white;
+  animation: uwu 7s;
+}
+@keyframes uwu{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@media (max-width:1000px){
+  canvas{
+    display: none;
+  }
+  input{
+    display: none;
+  }
+  h2{
+    position: absolute;
+    top: 15%;
+    color: black;
+    opacity: 1;
+  }
+  h1{
+    color: black;
+  }
+}

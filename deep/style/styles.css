@@ -1,0 +1,52 @@
+body{
+    margin: 0%;
+}
+.web{
+    animation: xd 6s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+
+}
+.web:empty{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+   
+}
+@keyframes xd {
+    0%{background-color: aqua;}
+    50%{background-color: blueviolet;}
+    100%{background-color: aqua;}
+}
+.check{
+    text-align: center;
+    pointer-events: all;
+    background-color: lightgray;
+    width: 20%;
+    border-radius: 15px;
+    margin: 5%;
+    padding: 5%;
+    font-size: 100;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ;
+}
+.check:hover{
+    pointer-events:all;
+    background-color: rgb(151, 151, 151);
+}
+.check:active{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), inset -5px -5px 15px rgba(0, 0, 0, 0.3),inset 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.escondido_hihi{
+    display: none;
+}
+.imagen{
+    width: 400px;
+    height: 400px;
+    margin:2%;
+}

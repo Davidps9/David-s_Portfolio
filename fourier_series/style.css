@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+button{
+  border-radius: 5px;
+  font-family: Verdana,  Tahoma, sans-serif;
+}
+input{
+  border-radius: 5px;
+}

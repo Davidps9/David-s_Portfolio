@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Museo htmelero de DeiveJS</title>
+    
+</head>
+<body>
+
+    <!--Buscate un tutorial perra-->
+    <section id="sct">
+        <svg id="crc">
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                <feColorMatrix values="
+                    0.5 0 0 0 0
+                    0 0 1 0 0
+                    0 0 0.8 0 0
+                    0 0 0 20 -2"></feColorMatrix>
+            </filter>
+        </svg>
+        <div id="loader">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+            <span style="--i:7"></span>
+            <span style="--i:8"></span>
+            <span class="rotate"style="--j:0"></span>
+            <span class="rotate"style="--j:1"></span>
+            <span class="rotate"style="--j:2"></span>
+            <span class="rotate"style="--j:3"></span>
+            <span class="rotate"style="--j:4"></span>
+        </div>
+    </section>
+    <section id="t_wrapper">
+        <svg id="svgg" viewBox="0 0 2000 900" >
+            <filter id="ftr_p">
+                <feOffset result="offOut" in="SourceGraphic" dx="50" dy="-50" />
+                <feGaussianblur in="SourceGraphic" stdDeviation="10"/>
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+            <path  stroke="lightgreen" stroke-width="5" id="triangle" d="M750 0 L100 0 L100 900 Z M1250 0 L1900 0 L1900 900 Z M1150 0 L850 0 L200 900 L1800 900 Z" />
+
+        </svg>
+    </section>
+    <div class="tap">Scroll to make magic</div>
+    <div id="c_wrapper">
+        <div class="circle c1"><a class="ª" href="../html_25_10/index.html"></a></div>
+        <div class="txt c1"> <a  href="../html_25_10/index.html">Cajas de Colores</a></div>
+        <div class="circle c2"><a class="ª" href="../P1/index.html"></a></div>
+        <div class="txt c2"><a href="../P1/index.html">P1</a> </div>
+        <div class="circle c3"><a class="ª" href="../P02/index.html"></a></div>
+        <div class="txt c3"> <a href="../P02/index.html">P02</a></div>
+        <div class="circle c4"><a class="ª" href="../P03_DavidPujol/index.html"></a></div>
+        <div class="txt c4"><a href="../P03_DavidPujol/index.html">P03</a></div>
+        <div class="circle c5"><a class="ª" href="../P04/index.html"></a></div>
+        <div class="txt c5"><a href="../P04/index.html">P04</a></div>
+        <div class="txt Return"><a href="../index.html">Return to Main Menu</a></div>
+    </div>
+    
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>

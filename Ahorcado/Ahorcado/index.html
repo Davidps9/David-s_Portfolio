@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+
+    <div class="svg_wrapper" id="svg_wrapper">
+        <svg id="svgg" viewBox="0 0 100 100">
+            <path id="horca" fill="none" stroke-width="3" stroke="black" d="M 10 80 L 80 80 M 25 80 V 20 H 55 V 30" />
+            <path class="body 1" id="leg1" fill="none" stroke-width="2" stroke="black" d="M 50 70 L 55 60"></path>
+            <path class="body 2" id="leg2" fill="none" stroke-width="2" stroke="black" d="M 60 70 L 55 60"></path>
+            <path class="body 3" id="body" fill="none" stroke-width="2" stroke="black" d="M 55 60 L 55 45"></path>
+            <path class="body 4" id="arm1" fill="none" stroke-width="2" stroke="black" d="M 55 50 L 50 55"></path>
+            <path class="body 5" id="arm2" fill="none" stroke-width="2" stroke="black" d=" M 55 50 L 60 55"></path>
+            <path class="body 6" id="head" fill="none" stroke-width="2" stroke="black"
+                d=" M 55 30 A -5 -5 0 1 0 55 45 A -5 -5 0 0 0 55 30"></path>
+        </svg>
+    </div>
+    <div id="form-wrapper">
+        <form action="javascript:void(0)" onsubmit="generatePassword()">
+            <input type="checkbox" id="animal"> Animales<br>
+            <input type="checkbox" id="ciudad"> Ciudades<br>
+            <input type="checkbox" id="friki"> Esta opción huele mal<br>
+            <input type="checkbox" id="hardcore"> ¡HARDCORE! Palabra totalmente random<br>
+            <input type="submit" value="Generar">
+        </form>
+    </div>
+    <div id="try">
+        <form action="javascript:void(0)" onsubmit="checking()">
+            <input type="text" name="myword" class="m_word" id="m_word" placeholder="Introduce una letra" required>
+            <input type="submit" value="Revisar">
+        </form>
+        <div class="try_counter" id="try_counter"></div>
+        <div id="guessed-word"></div>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

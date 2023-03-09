@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+#form-wrapper{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+}
+.try_counter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+}
+.svg_wrapper{
+    display: none;
+    width: 40%;
+    height: auto;
+}
+.body{
+    visibility: hidden;
+    stroke-dasharray: 50;
+    
+}
+.animated{
+   animation: pathing 2s;
+}
+@keyframes pathing{
+    from {
+        stroke-dashoffset: 50;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+#try{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#guessed-word{
+    margin: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
