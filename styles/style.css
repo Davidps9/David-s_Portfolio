@@ -98,7 +98,7 @@ a{
 @media (max-width: 800px){
 
     .card_container{
-        top: 35%;
+        top: 10%;
     }
     .card{
         width: 30vh;
