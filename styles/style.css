@@ -23,6 +23,7 @@ h1{
 h2{
     position: relative;
     left: 50%;
+    top:2%;
     transform: translateX(-50%);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
